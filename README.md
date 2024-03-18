@@ -2,14 +2,15 @@
 ## 1. Vision
 ### 1. Object Detection for Rubber Cone
 - 1. Download Rubber Cone dataset
-```bash
-# Bounding Boxes
-wget http://fsoco.cs.uni-freiburg.de/src/download_boxes_train.php
+    ```bash
+    # Bounding Boxes
+    wget http://fsoco.cs.uni-freiburg.de/datasets/fsoco_bounding_boxes_train.zip
 
-# Panoptic Segmentation
-wget http://fsoco.cs.uni-freiburg.de/src/download_segmentation_train.php
-```
+    # Panoptic Segmentation
+    wget http://fsoco.cs.uni-freiburg.de/datasets/fsoco_segmentation_train.zip
+    ```
 
+- 2. Change file format to train dataset using YOLO
 
 ## 2. Control Logic
 - 
