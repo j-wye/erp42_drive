@@ -35,7 +35,7 @@ The Mission : **<U>Drive a track made with rubber cones without lanes</U>**
 ### 1. Expression of Relation between Pixel Coordinate and World Coordinate
 Precondition : Camera is mounted on the top of the front of the vehicle, in the **center of the car**, **looking down**
 
-**<span style="color=red"> At Pixel Coordinate </span> :  $\color{red}(cx, cy)$**
+**<span style="color:red"> Pixel Coordinate :</span> $\color{red}(cx, cy)$**
 - $cx_{max} = cw$ (camera width)
 - $cy_{max} = ch$ (camera height)
 - $cx_{min} = 0$
@@ -48,10 +48,23 @@ Precondition : Camera is mounted on the top of the front of the vehicle, in the 
 
 At $cx = cw/2$, $cy = dp_{cy}$ :
 - $NP_C$ $DP_C$ $DP_C|_{x = cw/2}$ 이 세점으로 만들어진 직각삼각형의 사이각을 $\alpha$
-- $$\tan\alpha = \frac{dp_{cx}\,-\,cw/2}{ch - dp_{cy}}$$
+$$\tan\alpha = \frac{dp_{cx}\,-\,cw/2}{ch - dp_{cy}}$$
+
+**<span style="color:red"> World Coordinate :</span> $\color{red}(WX, WY)$**
+
+Camera height at World : $CH_W = (0, 0, h_W)$
+
+Camera $NP_C$, $FP_C$과 매칭되는 월드 좌표계에서의 좌표 : $NP_W$, $FP_W$
+- Nearest Point at World : $NP_W = (np_{WX},\,0,\,0)$
+- Farthest Point at World : $FP_W = (fp_{WX},\,0,\,0)$
+- Detected Point at World : $DP_W = (dp_{WX}\,,\,dp_{WY}, 0)$
+
+Expression of Relation between $dp_{cy}$ and $dp_{WX}$
+$$dp_{WX} = \frac{(ch\,-\,dp_{cy})}{ch}\times (fp_{WX} - np_{WX}) + np_{WX}$$
+- **픽셀 좌표계에서의 y좌표의 위치가 월드 좌표계에서의 X좌표의 위치와 일대일 대응이라는 생각**
+
+Right Triangle between three points : $Origin, CH_W,\,DP_W|_{y=0}$ 
+$$\overrightarrow{CH_W\,DP_W|_{y=0}} = (dp_{WX},\,0\,-h_W)$$
+$$\overline{CH_W\,DP_W|_{y=0}} = \sqrt{dp_{WX}^2\,+\,h_W^2}$$
 
 
-
-
-- Camera $NP_C$, $FP_C$과 매칭되는 월드 좌표계에서의 좌표 : $NP_W$, $FP_W$
-- 
