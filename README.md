@@ -32,10 +32,10 @@ The Mission : **<U>Drive a track made with rubber cones without lanes</U>**
 - Then I extracted the two centers of the coordinates extracted from each frame and set their centroid as the **goal point**.
 
 ## 2. Control Logic
-### 1. Expression of Relation between Pixel Coordinate and World Coordinate
-Precondition : Camera is mounted on the top of the front of the vehicle, in the **center of the car**, **looking down**
+### Expression of Relation between Pixel Coordinate and World Coordinate
+*Precondition : Camera is mounted on the top of the front of the vehicle, in the **center of the car**, **looking down***
 
-**<span style="color:red"> Pixel Coordinate :</span> $\color{red}(cx, cy)$**
+**<span style="color:indigo"> Pixel Coordinate :</span> $\color{indigo}(cx, cy)$**
 - $cx_{max} = cw$ (camera width)
 - $cy_{max} = ch$ (camera height)
 - $cx_{min} = 0$
@@ -50,7 +50,7 @@ At $cx = cw/2$, $cy = dp_{cy}$ :
 - $NP_C$ $DP_C$ $DP_C|_{x = cw/2}$ 이 세점으로 만들어진 직각삼각형의 사이각을 $\alpha$
 $$\tan\alpha = \frac{dp_{cx}\,-\,cw/2}{ch - dp_{cy}}$$
 
-**<span style="color:red"> World Coordinate :</span> $\color{red}(WX, WY)$**
+**<span style="color:indigo"> World Coordinate :</span> $\color{indigo}(WX, WY)$**
 
 Camera height at World : $CH_W = (0, 0, h_W)$
 
@@ -76,4 +76,6 @@ $$\overline{DP_W\,DP_W|_{y=0}} = \tan\alpha\times\overline{CH_W\,DP_W|_{y=0}}$$
 $$\color{blue}dp_{WY} = \tan\alpha\times\sqrt{dp_{WX}^2\,+\,h_W^2}$$
 
 ***최종적으로 차량이 존재하는 평면은 월드 좌표계에서의 XY평면이므로 steering angle을 세타라 하자.***
-$$\color{red}\tan\theta = \frac{dp_{WY}}{dp_{WX}}$$
+$$\tan\theta = \frac{dp_{WY}}{dp_{WX}}$$
+$$\color{red}\theta = \arctan{\frac{dp_{WY}}{dp_{WX}}}$$
+
