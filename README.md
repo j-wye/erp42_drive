@@ -79,3 +79,30 @@ $$\color{blue}dp_{WY} = \tan\alpha\times\sqrt{dp_{WX}^2\,+\,h_W^2}$$
 $$\tan\theta = \frac{dp_{WY}}{dp_{WX}}$$
 $$\color{red}\theta = \arctan{\frac{dp_{WY}}{dp_{WX}}}$$
 
+따라서, $f(dp_{cx},\,dp_{cy},\,cw,\,ch,\,fp_{WX},\,np_{WX},\,h_W)\,=\,\theta$
+
+But, input은 카메라에서 detect되는 점인 $dp_{cx},\,dp_{cy}$ 밖에 없다.
+
+$\therefore cw,\,ch,\,fp_{WX},\,np_{WX},\,h_W$ 이 5개의 변수는 상수값이어야 $\theta$ 를 구할 수 있다.
+
+### 3. Additional expression
+Camera Model : Intel realsense D435 
+```
+HFOV(Horizontal Field of View) : 69.4
+VFOV(Vertical Field of View) : 42.5
+```
+*$\phi$ : 카메라를 아래로 기울인 각도*
+
+if $\phi$ > 21.25 $\degree$ : 카메라가 아래로 VFOV의 절반인 21.25보다 크다면 카메라의 frame에는 바닥만이 잡히게 된다.
+
+1. By VFOV
+- 카메라 VFOV는 Z축을 기준으로 각도가 $(-\frac{VFOV}{2}, \frac{VFOV}{2})$ 였고, $\phi$ 만큼 아래로 회전했으므로, $(\phi\,-\,\frac{VFOV}{2},\,\phi\,+\,\frac{VFOV}{2})$ 가 된다.
+- 카메라 FOV의 아랫변과 카메라를 포함하는 평면을 C1, 카메라 FOV의 윗변과 카메라를 포함하는 평면을 C2라 하자.
+- Plane $C_1$의 normal vector $\overrightarrow{N_1}\,=\,(\tan(\phi\,+\,\frac{VFOV}{2}),\,0,\,1)$, Plane $C_2$의 normal vector $\overrightarrow{N_2}\,=\,(\tan(\phi\,-\,\frac{VFOV}{2}),\,0,\,1)$ 가 된다.
+
+2. By HFOV
+- 카메라의 FOV의 왼쪽 변을 $L_1$ 오른쪽 변을 $L_2$라 하자.
+- $L_1$과 $L_2$은 XZ평면에서 봤을 때, X축에 수직인 선분이다.
+- 이를 $\phi$만큼 회전시키
+- 카메라의 HFOV는 Y축을 기준으로 각도가 $(-\frac{HFOV}{2}, \frac{HFOV}{2})$ 였고, $\phi$ 만큼 아래로 회전했다.
+- 
