@@ -16,7 +16,8 @@
 
 - 4. Connect and detection with real-time
 
-- 5. 
+### 2. How to use detected Rubber Cone
+- 1. 
 
 ## 2. Control Logic
 - 
