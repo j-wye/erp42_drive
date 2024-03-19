@@ -91,6 +91,8 @@ But, input은 카메라에서 detect되는 점인 $dp_{cx},\,dp_{cy}$ 밖에 없
 
 $\therefore cw,\,ch,\,fp_{WX},\,np_{WX},\,h_W$ 이 5개의 변수는 상수값이어야 $\theta$ 를 구할 수 있다.
 
+$cw,\,ch$는 픽셀값이므로 상수이므로, $fp_{WX},\,np_{WX},\,h_W$값을 카메라의 각도와 높이를 설정해 측정하면 된다.
+
 ### 3. Additional expression
 Camera Model : Intel realsense D435 
 ```
