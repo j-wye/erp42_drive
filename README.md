@@ -66,6 +66,8 @@ $$\color{blue}dp_{WX} = \frac{(ch\,-\,dp_{cy})}{ch}\times (fp_{WX} - np_{WX}) + 
 Right Triangle between three points : $Origin, CH_W,\,DP_W|_{y=0}$
 
 $\overrightarrow{CH_W\,DP_W|_{y=0}}$ =
+$(dp_{WX},\,0\,-h_W)$
+
 $\begin{bmatrix}
 dp_{WX} \\
 0 \\
