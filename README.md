@@ -34,11 +34,24 @@ The Mission : **<U>Drive a track made with rubber cones without lanes</U>**
 ## 2. Control Logic
 ### 1. Expression of Relation between Pixel Coordinate and World Coordinate
 Precondition : Camera is mounted on the top of the front of the vehicle, in the **center of the car**, **looking down**
-- 픽셀 좌표계를 (cx, cy)라 하자
-    ```
-    cx<sub>max</sub> = width
-    cy_max = heiht
-    cx_min = 0
-    cy_min = 0
-    ```
+
+**<span style="color=red"> At Pixel Coordinate :  $(cx, cy)$ </span>**
+- $cx_{max} = cw$ (camera width)
+- $cy_{max} = ch$ (camera height)
+- $cx_{min} = 0$
+- $cy_{min} = 0$
+
+<!-- At **$\color{red}cx = cw\,/\,2$** :  -->
+- Nearest Point at Camera : $NP_C = (cw\,/\,2,\,ch)$
+- Farthest Point at Camera : $FP_C = (cw\,/\,2,\,0)$
+- Detected Point at Camera : $DP_C = (dp_{cx}\,,\,dp_{cy})$
+
+At $cx = cw/2$, $cy = dp_{cy}$ :
+- $NP_C$ $DP_C$ $DP_C|_{x = cw/2}$ 이 세점으로 만들어진 직각삼각형의 사이각을 $\alpha$
+- $$\tan\alpha = \frac{dp_{cx}\,-\,cw/2}{ch - dp_{cy}}$$
+
+
+
+
+- Camera $NP_C$, $FP_C$과 매칭되는 월드 좌표계에서의 좌표 : $NP_W$, $FP_W$
 - 
