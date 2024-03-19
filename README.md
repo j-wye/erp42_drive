@@ -35,7 +35,7 @@ The Mission : **<U>Drive a track made with rubber cones without lanes</U>**
 ### 1. Expression of Relation between Pixel Coordinate and World Coordinate
 Precondition : Camera is mounted on the top of the front of the vehicle, in the **center of the car**, **looking down**
 
-**<span style="color=red"> At Pixel Coordinate </span> :  $(cx, cy)$**
+**<span style="color=red"> At Pixel Coordinate </span> :  $\color{red}(cx, cy)$**
 - $cx_{max} = cw$ (camera width)
 - $cy_{max} = ch$ (camera height)
 - $cx_{min} = 0$
