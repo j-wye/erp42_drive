@@ -32,4 +32,14 @@ The Mission : **<U>Drive a track made with rubber cones without lanes</U>**
 - 5. Then I extracted the two centers of the coordinates extracted from each frame and set their centroid as the **goal point**.
 
 ## 2. Control Logic
-- 
+### 1. Expression of Relation between Pixel Coordinate and World Coordinate
+Precondition : Camera is mounted on the top of the front of the vehicle, in the **center of the car**, **looking down**
+- 1. 픽셀 좌표계를 (cx, cy)라 하자
+    - 
+        ```
+        cx_max = width
+        cy_max = heiht
+        cx_min = 0
+        cy_min = 0
+        ```
+    - 
