@@ -69,21 +69,15 @@ $\overrightarrow{CH_W\,DP_W|_{y=0}}$
 
 = $(dp_{WX},0,-h_W)$
 
-$\begin{matrix}
-dp_{WX} \\
-0 \\
--h_W
-\end{matrix}$
+$\overline{CH_W\,DP_W|_{y=0}}$
 
-$$\overline{CH_W\,DP_W|_{y=0}}$$
-
-$$\overrightarrow{CH_W\,DP_W|_{y=0}}\:=\:(dp_{WX},\,0\,-h_W)$$
-
-$$\overline{CH_W\,DP_W|_{y=0}} = \sqrt{dp_{WX}^2\,+\,h_W^2}$$
+ = $\sqrt{dp_{WX}^2\,+\,h_W^2}$
 
 Right Triangle between three points : $Origin,\,DP_W|_{y=0},\,DP_W$
 
-$$\overline{DP_W\,DP_W|_{y=0}} = \tan\alpha\times\overline{CH_W\,DP_W|_{y=0}}$$
+$\overline{DP_W\,DP_W|_{y=0}}$
+
+= $\tan\alpha\times\overline{CH_W\,DP_W|_{y=0}}$
 
 $$\color{blue}dp_{WY} = \tan\alpha\times\sqrt{dp_{WX}^2\,+\,h_W^2}$$
 
