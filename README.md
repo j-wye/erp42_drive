@@ -64,7 +64,9 @@ $$dp_{WX} = \frac{(ch\,-\,dp_{cy})}{ch}\times (fp_{WX} - np_{WX}) + np_{WX}$$
 - **픽셀 좌표계에서의 y좌표의 위치가 월드 좌표계에서의 X좌표의 위치와 일대일 대응이라는 생각**
 
 Right Triangle between three points : $Origin, CH_W,\,DP_W|_{y=0}$ 
+
 $$\overrightarrow{CH_W\,DP_W|_{y=0}} = (dp_{WX},\,0\,-h_W)$$
+
 $$\overline{CH_W\,DP_W|_{y=0}} = \sqrt{dp_{WX}^2\,+\,h_W^2}$$
 
 
