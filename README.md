@@ -36,7 +36,7 @@ The Mission : **<U>Drive a track made with rubber cones without lanes</U>**
 Precondition : Camera is mounted on the top of the front of the vehicle, in the **center of the car**, **looking down**
 - 픽셀 좌표계를 (cx, cy)라 하자
     ```
-    cx^max^ = width
+    cx<sub>max</sub> = width
     cy_max = heiht
     cx_min = 0
     cy_min = 0
