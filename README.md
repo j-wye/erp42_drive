@@ -60,7 +60,7 @@ Camera $NP_C$, $FP_C$과 매칭되는 월드 좌표계에서의 좌표 : $NP_W$,
 - Detected Point at World : $DP_W = (dp_{WX}\,,\,dp_{WY}, 0)$
 
 Expression of Relation between $dp_{cy}$ and $dp_{WX}$
-$$dp_{WX} = \frac{(ch\,-\,dp_{cy})}{ch}\times (fp_{WX} - np_{WX}) + np_{WX}$$
+$$\color{blue}dp_{WX} = \frac{(ch\,-\,dp_{cy})}{ch}\times (fp_{WX} - np_{WX}) + np_{WX}$$
 - **픽셀 좌표계에서의 y좌표의 위치가 월드 좌표계에서의 X좌표의 위치와 일대일 대응이라는 생각**
 
 Right Triangle between three points : $Origin, CH_W,\,DP_W|_{y=0}$
@@ -69,4 +69,11 @@ $$\overrightarrow{CH_W\,DP_W|_{y=0}} = (dp_{WX},\,0\,-h_W)$$
 
 $$\overline{CH_W\,DP_W|_{y=0}} = \sqrt{dp_{WX}^2\,+\,h_W^2}$$
 
+Right Triangle between three points : $Origin,\,DP_W|_{y=0},\,DP_W$
 
+$$\overline{DP_W\,DP_W|_{y=0}} = \tan\alpha\times\overline{CH_W\,DP_W|_{y=0}}$$
+
+$$\color{blue}dp_{WY} = \tan\alpha\times\sqrt{dp_{WX}^2\,+\,h_W^2}$$
+
+***최종적으로 차량이 존재하는 평면은 월드 좌표계에서의 XY평면이므로 steering angle을 세타라 하자.***
+$$\color{red}\tan\theta = \frac{dp_{WY}}{dp_{WX}}$$
