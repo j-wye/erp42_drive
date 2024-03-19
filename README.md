@@ -67,6 +67,8 @@ Right Triangle between three points : $Origin, CH_W,\,DP_W|_{y=0}$
 
 $$\overrightarrow{AB}$$
 
+$$\overline{CH_W\,DP_W|_{y=0}}$$
+
 $$\overrightarrow{CH_W\,DP_W|_{y=0}} = (dp_{WX},\,0\,-h_W)$$
 
 $$\overline{CH_W\,DP_W|_{y=0}} = \sqrt{dp_{WX}^2\,+\,h_W^2}$$
