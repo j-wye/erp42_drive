@@ -7,10 +7,10 @@ The Mission : **<U>Drive a track made with rubber cones without lanes</U>**
 - Download Rubber Cone dataset
     ```bash
     # Bounding Boxes
-    wget http://fsoco.cs.uni-freiburg.de/datasets/fsoco_bounding_boxes_train.zip
+    axel http://fsoco.cs.uni-freiburg.de/datasets/fsoco_bounding_boxes_train.zip
 
     # Panoptic Segmentation
-    wget http://fsoco.cs.uni-freiburg.de/datasets/fsoco_segmentation_train.zip
+    axel http://fsoco.cs.uni-freiburg.de/datasets/fsoco_segmentation_train.zip
     ```
 
 - At Roboflow, decide which YOLO version to use (e.g. YOLOv8). Then download dataset which suitable for that version
