@@ -42,9 +42,9 @@ The Mission : **<U>Drive a track made with rubber cones without lanes</U>**
 - $cy_{min} = 0$
 
 <!-- At **$\color{red}cx = cw\,/\,2$** :  -->
-- Nearest Point at Camera : $NP_C = (cw\ /,\ 2, ch)$
-- Farthest Point at Camera : $FP_C = (cw\ /,\2, 0)$
-- Detected Point at Camera : $DP_C = (dp_{cx}\,,\,dp_{cy})$
+- Nearest Point at Camera : $NP_C = (cw\ / \ 2, ch)$
+- Farthest Point at Camera : $FP_C = (cw\ / \2, 0)$
+- Detected Point at Camera : $DP_C = (dp_{cx}, \ dp_{cy})$
 
 At $cx = cw/2$, $cy = dp_{cy}$ :
 - $NP_C$ $DP_C$ $DP_C|_{x = cw/2}$ 이 세점으로 만들어진 직각삼각형의 사이각을 $\alpha$
